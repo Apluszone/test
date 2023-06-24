@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body, html {
+  height: 100%;
+  margin: 0;
+  font: 400 15px/1.8 "Lato", sans-serif;
+  color: #777;
+}
+
+.bgimg-1, .bgimg-2, .bgimg-3 {
+  position: relative;
+  opacity: 0.65;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.logo{
+    position: fixed;
+    top: 50px;
+    left:12.5%;
+    width: 180px;
+    height:90px;
+    z-index: 1;
+
+}
+.bgimg-1 {
+  background-image: url("pic1.png");
+  height: 100%;
+  opacity: 100%;
+}
+
+.caption {
+  position: absolute;
+  left: 0;
+  top: calc(60%);
+  width: 100%;
+  text-align: center;
+  color: #000;
+}
+
+.caption .button {
+  display: block;
+  width: 75%;
+  
+  margin: 5px auto;
+}
+
+.caption .button:first-child {
+  margin-bottom: 30px;
+}
+
+.caption span.border {
+  background-color: #111;
+  color: #fff;
+  padding: 18px;
+  font-size: 25px;
+  letter-spacing: 10px;
+}
+
+h3 {
+  letter-spacing: 5px;
+  text-transform: uppercase;
+  font: 20px "Lato", sans-serif;
+  color: #111;
+}
+
+.button {
+  background-color: #078eca;
+  border: none;
+  color: white;
+  padding: 5px 10px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  border-radius: 5px;
+  
+  
+}
+.slider {
+  overflow: hidden;
+  width: 100vw;
+  height: 100vh;
+  position: relative;
+}
+
+.slider .slide {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-position: center;
+  animation: slide 10s infinite;
+}
+
+.slider .slide:nth-child(1) {
+  background-image: url(pic11.png);
+  animation-delay: -0;
+}
+
+.slider .slide:nth-child(2) {
+  background-image: url(pic22.png);
+  animation-delay: -2s;
+}
+  
+.slider .slide:nth-child(3) {
+  background-image: url(pic33.png);
+  animation-delay: -4s;
+}
+.slider .slide:nth-child(4) {
+  background-image: url(pic44.png);
+  animation-delay: -6s;
+}
+  
+  
+
+
+
+
+@keyframes slide {
+  0%, 15%, 100% {
+    transform: translateX(0);
+    animation-timing-function: ease;
+  }
+  20% {
+    transform: translateX(-100%);
+    animation-timing-function: step-end;
+  }
+  95% {
+    transform: translateX(100%);
+    animation-timing-function: ease;
+  }
+}
+
+</style>
+</head>
+<body>
+    
+   
+<div class="bgimg-1">
+    <img src="Capture.PNG" alt="" class="logo">
+    <div class="slider">
+      <div class="slide"></div>
+      <div class="slide"></div>
+      <div class="slide"></div>
+      <div class="slide"></div>
+      
+    <div>
+
+  <div class="caption"  >
+  
+  
+
+     <a  href="https://outlook.office365.com/owa/calendar/AZoneBookingBaghdad@Sajalreefgroup.com/bookings/" class="button">Baghdad</a>
+    
+     <a href="https://outlook.office365.com/owa/calendar/AZone@Sajalreefgroup.com/bookings/" class="button">Erbil</a>
+     <p style="margin: 0px; position: relative; right: 2px; color:white;"><b>Contact Us</b></p>
+     <p style="margin: 0px;position: relative; left: 0px; "><a href="tel:+9647834483322" style="text-decoration:  none ; color: white;"> Baghdad:+964-7834483322</a></p>
+     <p style="margin: 0px; position: relative; right: 15px;"><a href="tel:+9647507541888" style="text-decoration:  none ; color: white;" > Erbil:+964-7507541888</a></p>
+     <p style="margin: 0px; position: relative; right: 9px;"><a href="mailto:info@apluszone.co" style="text-decoration:  none ; color: white;" > Email:info@apluszone.co</a></p>
+   
+    
+  
+    
+  </div>
+ 
+</div>
+
+
+
+</body>
+</html>
